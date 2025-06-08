@@ -11,20 +11,23 @@ static const int vertpad            = 0;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const char *fonts[] = {"JetBrainsMono Nerd Font-Bold:size=9.2"};
 static const char dmenufont[] = "JetBrainsMono Nerd Font-Bold:size=10.6";
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+
+static char normbgcolor[]           = "#f9e4bc";  // cream background
+static char normbordercolor[]       = "#444444";  // border color (unchanged)
+static char normfgcolor[]           = "#000000";  // black text
+static char selfgcolor[]            = "#ff7f00";  // orange workspace text (selected fg)
+static char selbordercolor[]        = "#005577";  // selected border color (unchanged)
+static char selbgcolor[]            = "#f9e4bc";  // cream background for selected
+
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 
+
 /* tagging */
-static const char *tags[] = { "","","","","", };
+static const char *tags[] = { " "," "," "," "," ", };
 
 static const Rule rules[] = {
 	/* xprop(1):
